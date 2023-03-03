@@ -1,35 +1,34 @@
- import React from 'react'
+import React from "react";
 
-
-
-
-
-
-const Title =()=>(
-    <a href="./">
-    <img className="h-28 px-2 rounded-[12px]" alt="logo" src="https://images.thecompanycheck.com/companylogo/ALTIUS_HOSPITALS_PRIVATE_LIMITED.webp"
-    />
-    </a>
-  );
 const Header = () => {
   return (
-    <div className="flex bg-blue-100 shadow-lg py-4">
-        <Title></Title>
-        <div className="nav-items">
-      <ul className="flex py-10">
-        <li className='px-2'>Find a doctor</li>
-        <li className='px-2'>Specialist</li>
-        <li className='px-2'>Treatment</li>
-        <li className='px-2'>Contact us</li>
-        <li className='px-2'>About Usr</li>
-        <li className='px-2'>Find a doctor</li>
-      </ul>
+    <div className="flex bg-blue-100 shadow-lg py-4 justify-around px-16 items-center">
+      <a href="./">
+        <img
+          className="h-20 px-2 rounded-[12px]"
+          alt="logo"
+          src="https://images.thecompanycheck.com/companylogo/ALTIUS_HOSPITALS_PRIVATE_LIMITED.webp"
+        />
+      </a>
+      <div className="flex justify-around min-w-[70%] items-center">
+        <span>Find a doctor</span>
+        <span>Specialist</span>
+        <span>Treatment</span>
+        <span>Contact us</span>
+        <span>About Us</span>
+        <span>Find a doctor</span>
+        <span className="bg-orange-300 py-1 px-3 rounded-sm">Contact Us</span>
+        <span className="bg-orange-300 py-1 px-3 rounded-sm">
+          Call Phone No.
+        </span>
       </div>
     </div>
-  )
-}
+  );
+};
 
- export default Header
+export default Header;
+
+ 
 // import React from "react";
 // import { Link } from "react-router-dom";
 

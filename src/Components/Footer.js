@@ -3,7 +3,7 @@ import React from "react";
 const Footer = () => {
   return (
     <footer className="bg-gray-800 text-gray-300 py-6">
-      <div className="container mx-auto flex justify-between">
+      <div className="container mx-auto flex justify-between px-10">
         <div className="flex items-center">
           <img
             src="https://images.thecompanycheck.com/companylogo/ALTIUS_HOSPITALS_PRIVATE_LIMITED.webp"
@@ -13,7 +13,7 @@ const Footer = () => {
           <span className="text-lg font-semibold ml-2">Altius Hospital</span>
         </div>
         <div>
-          <ul className="flex space-x-4">
+          <ul className="flex space-x-8">
             <li>
               <a href="#" className="hover:text-gray-500">
                 About Us
