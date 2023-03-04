@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import DoctorCard from "./DoctorCard";
 import ContactForm from "./ContactForm";
+import Specilities from "./Specilities";
 
 // function filterData(inputTxt, Doctors) {
 //   const filterData = Doctors.filter((Doc) =>
@@ -21,7 +22,7 @@ const Body = () => {
     const data = await fetch("http://localhost:5000/Doctor");
     const json = await data.json();
     //optional chaining
-    console.log("json",json)
+    // console.log("json",json)
     setDoctor(json.msg);
   }
 
@@ -62,6 +63,7 @@ const Body = () => {
         })}
       </div>
       <div>
+        <Specilities/>
         <ContactForm />
       </div>
     </div>
