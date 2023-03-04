@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import DoctorCard from "./DoctorCard";
 import ContactForm from "./ContactForm";
 import Specilities from "./Specilities";
+import Form from "./Form";
 
 // function filterData(inputTxt, Doctors) {
 //   const filterData = Doctors.filter((Doc) =>
@@ -62,10 +63,12 @@ const Body = () => {
           return <DoctorCard {...doctors} />;
         })}
       </div>
-      <div>
+      
+      {/* <h2 className="text-3xl font-bold text-gray-800">Heading Speculation</h2> */}
         <Specilities/>
         <ContactForm />
-      </div>
+        
+      
     </div>
   );
 };

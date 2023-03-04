@@ -1,4 +1,5 @@
 import React,{ useEffect, useState } from 'react'
+import SpecilitiesCard from './SpecialtiesCard';
 
 const Specilities = () => {
     const [Specilities,Setspecilities] = useState([]);
@@ -16,10 +17,21 @@ const Specilities = () => {
 
 
   return (
-    <div>
-      
+    <div className="bg-gray-200">
+       <div className="col-span-10 text-center p-8">
+        
+       
+     
+      <div className="flex flex-wrap bg-gray-200 justify-around px-20">
+        {Specilities.map((Specilities) => {
+          return <SpecilitiesCard {...Specilities} />;
+        })}
+      </div>
+      </div>
     </div>
-  )
-}
+  );
+};
+  
+
 
 export default Specilities

@@ -1,17 +1,48 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
+import {createBrowserRouter,Outlet,RouterProvider} from "react-router-dom"
 import './index.css';
 import App from './App';
+import Body from './Components/Body';
+import Form from './Components/Form';
+import ContactForm from './Components/ContactForm';
+
+
+const appRouter=createBrowserRouter([{
+  path:"/",
+  element:<App/>,
+  // errorElement:<Error/>,
+  children:[
+    {
+    path:"/",
+    element:<Body/>
+  },
+  {
+    path:"/appointment",
+    element:<Form/>,
+    
+  },
+  {
+    path:"/contact",
+    element:<ContactForm/>,
+    
+  },
+]
+  }
+  ])
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>
+ <RouterProvider router={appRouter}/>
 );
 
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
+// const root = ReactDOM.createRoot(document.getElementById('root'));
+// root.render(
+//   <React.StrictMode>
+//     <App />
+//   </React.StrictMode>
+// );
+
+
 

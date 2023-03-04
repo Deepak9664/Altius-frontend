@@ -13,7 +13,7 @@ const DoctorCard = ({
       <div className="flex flex-col items-center">
         <img
           className="w-24 h-24 mb-3 rounded-full p-2 shadow-lg"
-          src="https://images.thecompanycheck.com/companylogo/ALTIUS_HOSPITALS_PRIVATE_LIMITED.webp"
+          src="https://altiushospital.com/wp-content/uploads/2022/09/dr-imran-1024x1024.jpg"
           alt="Doctor's Image"
         />
         <h5 className="mb-1 text-xl font-medium text-gray-900 dark:text-white">

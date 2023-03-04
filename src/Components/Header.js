@@ -1,4 +1,6 @@
 import React from "react";
+import { Link } from "react-router-dom";
+import ContactForm from "./ContactForm";
 
 const Header = () => {
   return (
@@ -14,7 +16,7 @@ const Header = () => {
         <span>Find a doctor</span>
         <span>Specialist</span>
         <span>Treatment</span>
-        <span>Contact us</span>
+     <Link to='/contact' >  <span>Contact us</span> </Link>
         <span>About Us</span>
         <span>Find a doctor</span>
         <span className="bg-orange-300 py-1 px-3 rounded-sm">Contact Us</span>
