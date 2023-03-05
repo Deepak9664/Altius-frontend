@@ -11,6 +11,11 @@ const Form = () => {
       event.preventDefault();
       // Here you can send the form data to the server or handle it as required
       console.log({ name, date, time, reason });
+      alert(`${name}, ${date}, ${time}, ${reason}`);
+      setName("");
+      setDate("");
+      setTime("");
+      setReason("");
     };
   
     return (

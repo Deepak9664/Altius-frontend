@@ -3,6 +3,7 @@ import DoctorCard from "./DoctorCard";
 import ContactForm from "./ContactForm";
 import Specilities from "./Specilities";
 import Form from "./Form";
+import { Link } from "react-router-dom";
 
 // function filterData(inputTxt, Doctors) {
 //   const filterData = Doctors.filter((Doc) =>
@@ -34,7 +35,7 @@ const Body = () => {
     console.log(filteredDoctor)
   };
   return (
-    <div className="bg-gray-200">
+    <div className="bg-gray-200 flex-col justify-around">
        <div className="col-span-10 text-center p-8">
         <input
           className="w-1/2 border border-gray-400 p-2 rounded-l-full px-6"
@@ -58,10 +59,11 @@ const Body = () => {
       {filteredDoctor.length
         ? filteredDoctor.map((doc) => <h1>{doc.name}</h1>)
         : ""} 
-      <div className="flex flex-wrap bg-gray-200 justify-around px-20">
+      <div className="flex flex-wrap bg-gray-200 justify-around px-20  align-center">
         {doctor.map((doctors) => {
-          return <DoctorCard {...doctors} />;
-        })}
+          return (
+          <Link to="/appointment"> <DoctorCard {...doctors} />; </Link>
+        )})}
       </div>
       
       {/* <h2 className="text-3xl font-bold text-gray-800">Heading Speculation</h2> */}

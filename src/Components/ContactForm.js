@@ -10,6 +10,11 @@ function ContactForm() {
     event.preventDefault();
     // Here you can send the form data to the server or handle it as required
     console.log({ name, email, phone, message });
+    alert(`${name}, ${email}, ${phone}, ${message}`);
+    setEmail("");
+    setMessage("");
+    setName("");
+    setPhone("");
   };
 
   return (
@@ -68,7 +73,7 @@ function ContactForm() {
       <div className="flex justify-center">
         <button
           type="submit"
-          className="bg-blue-500 text-white font-bold py-2 px-4 rounded"
+          className="bg-blue-500 text-white font-bold py-2 px-4 rounded mb-6"
         >
           Submit
         </button>

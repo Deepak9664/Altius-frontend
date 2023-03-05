@@ -3,12 +3,13 @@ import './App.css';
 import Header from './Components/Header';
 import Body from './Components/Body';
 import Footer from './Components/Footer';
+import {Outlet} from "react-router-dom"
 
 function App() {
   return (
-    <div className="App">
+    <div className='flex-col items-'>
       <Header/>
-      <Body/>
+      <Outlet/> 
       <Footer/>
 
     </div>
